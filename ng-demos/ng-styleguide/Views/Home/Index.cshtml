@@ -1,0 +1,20 @@
+﻿<html ng-app="appstyleguide">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AngularJS Styleguide</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div ng-cloak>
+        <h2>AngularJS Styleguide</h2>
+        <a href="/home">Home</a> <a href="/contact">Contact</a>
+    </div>
+    <div ng-view>
+        <div id="splash" class="splash">
+            Loading ...
+        </div>
+    </div>
+    @Scripts.Render("~/scripts/libraries")
+    @Scripts.Render("~/scripts/app")
+</body>
+</html>
